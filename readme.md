@@ -33,6 +33,8 @@ production build:
 
 * ng g c components/TodoList
 
+* npm install material-design-icons
+
 
 log: 
 * Just imported every single angular material module
