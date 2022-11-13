@@ -14,3 +14,18 @@ commands :
 * cd todo
 * ng serve --open
 
+
+Add new component
+* ng generate component xyz
+
+Add angular material
+* ng add @angular/material
+
+Add dependency
+* ng add _____
+
+Run angular test: 
+* ng test
+
+production build:
+* ng build 
