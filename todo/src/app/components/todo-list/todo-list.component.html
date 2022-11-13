@@ -1,0 +1,29 @@
+<!-- container
+
+input : to add todo items with add icon
+
+list view of todo items with edit and delete icons -->
+
+{{_todo | json}}
+
+<mat-card>
+    <mat-card-title>Todo Application</mat-card-title>
+
+    <mat-form-field class="example-form-field" appearance="fill">
+        <mat-label>Clearable input</mat-label>
+
+        <input matInput type="text" [(ngModel)]="todoTitle">
+
+        <!-- <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button> -->
+
+      </mat-form-field>
+      
+
+    <!-- <mat-card-subtitle>Start</mat-card-subtitle> -->
+    <!-- <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+</mat-card>

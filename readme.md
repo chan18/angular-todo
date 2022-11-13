@@ -29,3 +29,10 @@ Run angular test:
 
 production build:
 * ng build 
+
+
+* ng g c components/TodoList
+
+
+log: 
+* Just imported every single angular material module
