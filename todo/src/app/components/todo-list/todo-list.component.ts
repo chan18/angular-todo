@@ -8,7 +8,12 @@ import { Todo } from '../../model/todo';
 })
 export class TodoListComponent implements OnInit {
 
-  public _todo: Todo[] = [
+  public todos: Todo[] = [
+    {id: 1, completed: false, title: "test"},
+    {id: 1, completed: false, title: "test"},
+    {id: 1, completed: false, title: "test"},
+    {id: 1, completed: false, title: "test"},
+    {id: 1, completed: false, title: "test"},
     {id: 1, completed: false, title: "test"},
   ];
 

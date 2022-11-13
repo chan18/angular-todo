@@ -4,7 +4,7 @@ input : to add todo items with add icon
 
 list view of todo items with edit and delete icons -->
 
-{{_todo | json}}
+{{todos | json}}
 
 <mat-card>
     <mat-card-title>Todo Application</mat-card-title>
@@ -14,11 +14,22 @@ list view of todo items with edit and delete icons -->
 
         <input matInput type="text" [(ngModel)]="todoTitle">
 
-        <!-- <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-          <mat-icon>close</mat-icon>
-        </button> -->
+        <button *ngIf="todoTitle" matSuffix mat-icon-button 
+        aria-label="Clear"
+         (click)="todoTitle=''">
+              <mat-icon>close</mat-icon>
+        </button>
 
-      </mat-form-field>
+      </mat-form-field>      
+      <button mat-raised-button color="primary">Add</button>
+      
+
+    <div *ngFor="let todo of todos">
+        <mat-card-subtitle>{{todo.title}}</mat-card-subtitle>
+        <mat-icon svgIcon="thumbs-up"></mat-icon>
+
+        <button mat-raised-button color="primary">remove</button>
+    </div>
       
 
     <!-- <mat-card-subtitle>Start</mat-card-subtitle> -->
